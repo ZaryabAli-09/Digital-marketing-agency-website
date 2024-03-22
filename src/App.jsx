@@ -11,6 +11,7 @@ import Cards from "./components/cards/Cards";
 // animation library
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ContactUs from "./containers/contact-us/ContactUs";
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -39,6 +40,9 @@ const App = () => {
         <Blog />
       </div>
       <div data-aos="fade-left">
+        <ContactUs />
+      </div>
+      <div data-aos="zoom-in">
         <Footer />
       </div>
     </div>
